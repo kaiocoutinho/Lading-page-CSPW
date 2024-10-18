@@ -101,3 +101,23 @@ img {
         transition: 0.5s;
     }
 }
+
+/* Stilo para a mensagem de sucesso do formulário*/
+
+#message{
+    position: absolute;
+    width: 99%;
+    height: 90%;
+    z-index: 100;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000d5;
+    transition: 0.5s;
+}
+
+.hide{
+    transition: 0.5s;
+    display: none !important;
+}

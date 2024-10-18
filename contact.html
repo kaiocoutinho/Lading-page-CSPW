@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="Style/style.css">
+    <script src="js/modalContact.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,11 @@
         </nav>
     </header>
 </body>
-
+<aside id="message" class="hide">
+    <div class="message">
+        <h1>Formulário enviado com sucesso!</h1>
+    </div>
+</aside>
 <main>
     <h1 class="center">Entre em contato:</h1>
     <section class="card">
@@ -49,7 +54,7 @@
                 <textarea name="textarea" id="textarea"></textarea>
             </div>
             <div>
-                <button type="submit">Enviar</button>
+                <button type="submit" id="saveBtn">Enviar</button>
             </div>
         </form>
     </section>
