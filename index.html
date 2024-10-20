@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="/Style/style.css">
+
+    <style>
+        div#about-me {
+            margin-top: 40px;
+            padding: 5px;
+            width: 500px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            border-top: 10px solid rgb(92, 13, 196);
+            border-right: 10px solid rgb(92, 13, 196);
+            border-bottom: 10px solid rgb(92, 13, 196);
+        }
+
+        .myImage {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .myImage>img {
+            width: 200px;
+            height: 250px;
+            border-radius: 20%;
+        }
+
+        .footer-about>img {
+            width: 48px;
+            height: 48px;
+            border-radius: 20px;
+        }
+
+        .footer-about {
+            padding-bottom: 10px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .text-about-me {
+            height: 300px;
+        }
+
+        .text-about-me>ul {
+            display: flex;
+            font-size: 20px;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+        }
+
+        #more-about-me {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            width: 65%
+        }
+
+        h1 {
+            font-size: 46px;
+            color: rgb(92, 13, 196);
+        }
+
+        .resum {
+            padding-right: 20px;
+            margin-top: 40px;
+            text-align: start;
+        }
+
+        @media (width < 1304px) {
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            #about-me {
+                width: 100px;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="/index.html"><span>Currículo</span></a>
+            <a href="./service.html"><span>Serviços</span></a>
+            <a href="./github.html"><span>Github</span></a>
+            <a href="./contact.html"><span>Contato</span></a>
+        </nav>
+    </header>
+    <main>
+        <div id="about-me"> <!--Minhas informações fixadas a esquerda-->
+            <section class="myImage"><img src="./images/foto-nova.jpg" alt="Minha foto."></section>
+            <section class="text-about-me">
+                <ul>
+                    <li>Kaio Coutinho de Souza</li>
+                    <li>Desenvolvedor Front-end</li>
+                    <li>Atualmente trabalhando no <a
+                            href="https://www.google.com/search?client=opera-gx&q=CPID&sourceid=opera&ie=UTF-8&oe=UTF-8"
+                            target="_blank">CPID</a>
+                    </li>
+                    <li>Cursando Ciência da Computação(UVV)</li>
+                </ul>
+            </section>
+            <section class="footer-about">
+                <img src="./images/instagram.jfif" alt="Icone instagram">
+            </section>
+        </div>
+
+        <div id="more-about-me">
+            <section class="resum">
+                <h1>Sobre mim</h1>
+                <div class="text-resum">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam consectetur, animi minus,
+                        atque officiis necessitatibus reiciendis dicta impedit velit saepe nesciunt. Repellendus alias
+                        molestias, laboriosam quisquam numquam provident vel!</p>
+                </div>
+            </section>
+            <section class="resum">
+                <h1>Hablidades</h1>
+                <div class="text-resum">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam consectetur, animi minus,
+                        atque officiis necessitatibus reiciendis dicta impedit velit saepe nesciunt. Repellendus alias
+                        molestias, laboriosam quisquam numquam provident vel!</p>
+                </div>
+            </section>
+            <section class="resum">
+                <h1>Experiência</h1>
+                <div class="text-resum">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam consectetur, animi minus,
+                        atque officiis necessitatibus reiciendis dicta impedit velit saepe nesciunt. Repellendus alias
+                        molestias, laboriosam quisquam numquam provident vel!</p>
+                </div>
+            </section>
+            <section class="resum">
+                <h1>Cursos</h1>
+                <div class="text-resum">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam consectetur, animi minus,
+                        atque officiis necessitatibus reiciendis dicta impedit velit saepe nesciunt. Repellendus alias
+                        molestias, laboriosam quisquam numquam provident vel!</p>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

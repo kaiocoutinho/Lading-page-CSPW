@@ -1,0 +1,130 @@
+@import "base.css";
+hmtl{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+    color: #ffff;
+    font-family: 'Poppins';
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+nav > span{
+    cursor: pointer;
+}
+
+main{
+    margin-top: 30px;
+}
+
+main > h2 {
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(92, 13, 196);
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap: 50px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 4px 23px 0px rgba(92,12,196,0.79);
+-moz-box-shadow: 2px 4px 23px 0px rgba(92,12,196,0.79);
+box-shadow: 2px 4px 23px 0px rgba(92,12,196,0.79);
+}
+
+#my-github{
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+}
+#my-github > h1{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(92, 13, 196);
+}
+
+h2{
+    color: rgb(92, 13, 196);
+}
+
+img {
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-body:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.card-body{
+    transition: 0.5s;
+    text-align: center;
+}
+
+@media(width < 880px){
+    .card-image > img {
+        width: 90%;
+        transition: 0.5s;
+    }
+}
+
+/* Stilo para a mensagem de sucesso do formulário*/
+
+#message{
+    position: absolute;
+    width: 99%;
+    height: 90%;
+    z-index: 100;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000d5;
+    transition: 0.5s;
+}
+
+.message{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+}
+
+.hide{
+    transition: 0.5s;
+    display: none !important;
+}
