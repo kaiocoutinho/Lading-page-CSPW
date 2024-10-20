@@ -117,6 +117,13 @@ img {
     transition: 0.5s;
 }
 
+.message{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+}
+
 .hide{
     transition: 0.5s;
     display: none !important;

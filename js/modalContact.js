@@ -3,9 +3,10 @@ function showMessage() {
   message.classList.remove("hide");
   setTimeout(() => {
     message.classList.add("hide");
-  }, 1500);
+  }, 2000);
 }
 
-document.querySelector("#saveBtn").addEventListener("click", () => {
+document.querySelector("#saveBtn").addEventListener("click", (ev) => {
+  ev.preventDefault();
   showMessage();
 });
